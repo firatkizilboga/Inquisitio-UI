@@ -1,0 +1,40 @@
+{
+    "name": "Inquisitio.AI",
+    "version": "1.0",
+    "description": "Inquisitio.AI is a browser extension that helps you read pages faster. An artificea product.",
+    "manifest_version": 3,
+    "background": {
+        "service_worker": "background.js",
+        "type": "module"
+    },
+    "icons": {
+        "128": "icon500.png"
+    },
+    "action": {
+        "default_popup": "ask.html"
+    },
+    "options_ui": {
+        "page": "options.html"
+    },
+    "permissions": [
+        "activeTab",
+        "tabs",
+        "storage",
+        "scripting",
+        "downloads"
+    ],
+    "host_permissions": [
+        "http://*/*",
+        "https://*/*",
+        "file://*/*"
+    ],
+    "web_accessible_resources":[{
+        "resources": [
+            "ask.html",
+            "ask.js",
+            "login.html",
+            "login.js"
+        ],
+        "matches": ["http://*/*", "https://*/*", "file://*/*"]
+    }]
+}

@@ -1,0 +1,32 @@
+<head>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="global.css">
+</head>
+<div class="p-3">
+
+  <div class="d-flex align-items-end mb-3">
+    <h1>inquisitio.ai</h1>
+    <p class="sub-h1"> an artificea product</p>
+  </div>
+
+  <div class="d-flex mt-2">
+    <input type="text" class="w-100 m-w-350px" id="question" placeholder="What is the molar mass of nitrogen?" />
+    <button id="find-button" class="btn ml-2 main-button"><i class="fa fa-search"></i> </button>
+  </div>
+
+  <p class="mt-2 ml-2">Engine</p>
+  <select name="models" id="model-engine">
+    <option value="ask-chatgpt/">davinci (expensive, higher quality)</option>
+    <option value="ask-babbage/">babbage (cheaper, lower quality)</option>
+  </select>
+
+  <p id="answer" class="invisible mt-4">Your answer will appear here!</p>
+  <div id="loading-bar" class="loader invisible mt-4">
+    <div class="loaderBar"></div>
+  </div>
+
+</div>
+<script src="ask.js"></script>
+</div>

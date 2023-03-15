@@ -1,0 +1,30 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="global.css">
+  </head>
+  <body>
+    <div class="d-flex flex-column align-items-center justify-content-center p-5">
+      <h1>
+        inquisitio.ai
+      </h1>
+      <div class="w-100 align-items-center justify-content-center d-flex flex-column">
+        
+
+        <input type="email" id="email" class="m-2 m-w-350px" placeholder="E-Mail"/>
+        <input type="password" id="password" class="m-2 m-w-350px" placeholder="Password"/>
+
+        <p class="errors invisible" id = "errors" style="width: 350px;">This email-password combination do not match with any records.</p>
+        <p class="success invisible" id = "success" style="width: 350px;">Logged in successfully. You can safely this tab and start using the extension.</p>
+        <button type="button" id="login-button" class="btn main-button m-2 m-w-350px">
+          Login
+        </button>
+        <br>
+        <p>If you don't have an account <a href="register.html">register here!</a></p>
+      </div>
+      <script src="login.js"></script>
+    </div>
+  </body>
+</html>
